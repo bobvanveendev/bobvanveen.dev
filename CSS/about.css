@@ -1,0 +1,112 @@
+.c-quote {
+  padding-block: clamp(3.5rem, 2rem + 6vw, 6rem);
+  background: var(--color-surface-tint);
+}
+.c-quote__inner {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+.c-quote__mark {
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.c-quote__text {
+  margin-top: var(--space-lg);
+  font-size: clamp(1.4rem, 1rem + 2.2vw, 2.3rem);
+  line-height: 1.32;
+  font-weight: var(--fw-medium);
+  letter-spacing: -0.018em;
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+
+/* ---- About ---- */
+.c-about__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+@media (min-width: 56em) {
+  .c-about__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(2.5rem, 1rem + 5vw, 6rem);
+  }
+  .c-about__head {
+    flex: 0 0 38%;
+    position: sticky;
+    top: 100px;
+  }
+  .c-about__body {
+    flex: 1 1 0;
+  }
+}
+
+.c-about__head .c-section-head__title {
+  margin-bottom: var(--space-md);
+  text-wrap: auto;
+}
+
+.c-about__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.c-about__text p {
+  color: var(--color-ink-soft);
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+}
+
+/* ---- Core values ---- */
+.c-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+.c-value {
+  flex: 1 1 100%;
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+}
+@media (min-width: 30em) {
+  .c-value {
+    flex: 1 1 calc(33.333% - 0.7rem);
+    min-width: 0;
+    flex-direction: column;
+  }
+}
+.c-value__icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+.c-value__icon svg {
+  width: 20px;
+  height: 20px;
+}
+.c-value__title {
+  font-size: 1.0625rem;
+  font-weight: var(--fw-semi);
+  margin-bottom: 0.3rem;
+}
+.c-value__desc {
+  font-size: var(--fs-meta);
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+}

@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bob van Veen — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Bob van Veen is frontend developer met ruim 4 jaar ervaring. Hij bouwt rustige, gebruiksvriendelijke websites en interfaces met HTML, CSS, Sass en JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/process.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+  <body class="t-theme">
+    <!-- =================== HEADER =================== -->
+    <header class="c-header">
+      <div class="o-container c-header__inner">
+        <a class="c-brand" href="#top" aria-label="Bob van Veen — home">
+          <span class="c-brand__mark" aria-hidden="true">BV</span>
+          <span>Bob van Veen</span>
+        </a>
+
+        <button
+          class="c-nav-toggle"
+          aria-label="Menu openen"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <span class="c-nav-toggle__bar"></span>
+          <span class="c-nav-toggle__bar"></span>
+          <span class="c-nav-toggle__bar"></span>
+        </button>
+
+        <nav class="c-nav" id="primary-nav" aria-label="Hoofdnavigatie">
+          <ul class="c-nav__list">
+            <li><a class="c-nav__link" href="#projecten">Projecten</a></li>
+            <li><a class="c-nav__link" href="#over">Over mij</a></li>
+            <li><a class="c-nav__link" href="#werkwijze">Werkwijze</a></li>
+            <li><a class="c-nav__link" href="#contact">Contact</a></li>
+          </ul>
+          <span class="c-nav__cta">
+            <a class="c-btn c-btn--primary" href="#contact">Neem contact op</a>
+          </span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <span id="top"></span>
+
+      <!-- =================== HERO =================== -->
+      <section class="c-hero o-container" aria-labelledby="hero-title">
+        <div class="c-hero__inner">
+          <div class="c-hero__body">
+            <span class="c-eyebrow c-hero__eyebrow">Frontend developer</span>
+            <h1 class="c-hero__title" id="hero-title">
+              Gebouwd met aandacht
+              <span class="u-text-accent">voor detail.</span>
+            </h1>
+            <p class="c-lead c-hero__lead">
+              Frontend developer met ruim 4 jaar ervaring in het bouwen van
+              websites en webapplicaties.
+            </p>
+            <p class="c-lead c-hero__lead">
+              Ik werk graag aan digitale producten waarin kwaliteit, structuur
+              en gebruiksvriendelijkheid centraal staan.
+            </p>
+            <div class="c-hero__actions">
+              <a class="c-btn c-btn--primary" href="#projecten"
+                >Bekijk mijn werk</a
+              >
+              <a class="c-btn c-btn--secondary" href="#contact"
+                >Neem contact op</a
+              >
+            </div>
+            <p class="c-hero__status">
+              <span class="c-hero__status-dot" aria-hidden="true"></span>
+              Beschikbaar voor een frontend functie
+            </p>
+          </div>
+
+          <div class="c-hero__media">
+            <img
+              class="c-hero__photo"
+              src="assets/images/hero/bob.png"
+              width="400"
+              height="400"
+              alt="Portretfoto van Bob van Veen"
+            />
+            <div class="c-hero__badge">
+              <span class="c-hero__badge-num">4+ jaar ervaring</span>
+              <span class="c-hero__badge-label">Frontend Developer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== SKILLS =================== -->
+      <section class="c-skills" aria-label="Vaardigheden">
+        <div class="o-container c-skills__inner">
+          <span class="c-skills__label">Waar ik mee werk</span>
+          <ul class="c-skills__list">
+            <li class="c-skill">
+              <i class="devicon-html5-plain" aria-hidden="true"></i>
+              HTML
+            </li>
+            <li class="c-skill">
+              <i class="devicon-css3-plain" aria-hidden="true"></i>
+              CSS / Sass
+            </li>
+            <li class="c-skill">
+              <i class="devicon-javascript-plain" aria-hidden="true"></i>
+              JavaScript
+            </li>
+            <li class="c-skill">
+              <i class="devicon-react-original" aria-hidden="true"></i>
+              React (basis)
+            </li>
+            <li class="c-skill">
+              <svg
+                class="c-skill__icon"
+                viewBox="0 0 18 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="1" y="4" width="11" height="9" rx="1.5" />
+                <rect x="14" y="6" width="3.5" height="6" rx="1" />
+                <line x1="1" y1="11" x2="13" y2="11" />
+              </svg>
+              Responsive design
+            </li>
+            <li class="c-skill">
+              <svg
+                class="c-skill__icon"
+                viewBox="0 0 18 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="3.5" r="1.5" />
+                <line x1="9" y1="5" x2="9" y2="10" />
+                <line x1="5" y1="7.5" x2="13" y2="7.5" />
+                <path d="M6.5 10 L5 14.5" />
+                <path d="M11.5 10 L13 14.5" />
+              </svg>
+              Toegankelijkheid
+            </li>
+            <li class="c-skill">
+              <i class="devicon-git-plain" aria-hidden="true"></i>
+              Git
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- =================== PROJECTS =================== -->
+      <section
+        class="c-projects o-section"
+        id="projecten"
+        aria-labelledby="projecten-title"
+      >
+        <div class="o-container">
+          <div class="c-section-head">
+            <span class="c-eyebrow">Projecten</span>
+            <h2 class="c-section-head__title" id="projecten-title">
+              Uitgelicht werk
+            </h2>
+            <p class="c-section-head__intro">
+              Projecten waarin ik heb gewerkt aan toegankelijke interfaces,
+              herbruikbare componenten en onderhoudbare frontend code.
+            </p>
+          </div>
+
+          <div class="c-projects__list">
+            <!-- Personal portfolio -->
+            <article class="c-project">
+              <div class="c-project__top">
+                <span class="c-project__index">01</span>
+                <span class="c-project__type">PERSOONLIJK PROJECT</span>
+              </div>
+              <h3 class="c-project__title">Persoonlijk portfolio</h3>
+              <p class="c-project__desc">
+                Mijn eigen portfolio, ontworpen en gebouwd om te laten zien hoe
+                ik werk als frontend developer. Van ontwerp tot code heb ik
+                alles zelf opgezet, met focus op eenvoud, leesbaarheid en een
+                prettige gebruikerservaring.
+              </p>
+              <ul class="c-project__tags">
+                <li class="c-project__tag">HTML</li>
+                <li class="c-project__tag">CSS</li>
+                <li class="c-project__tag">JavaScript</li>
+                <li class="c-project__tag">Git</li>
+              </ul>
+              <div class="c-project__actions">
+                <a class="c-btn c-btn--text" href="#"
+                  >Bekijk project
+                  <span class="c-btn__arrow" aria-hidden="true">→</span></a
+                >
+                <a
+                  class="c-btn c-btn--text"
+                  href="https://github.com/bobvanveendev/bobvanveen.dev"
+                  >Bekijk code
+                  <span class="c-btn__arrow" aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+
+            <!-- Landing page -->
+            <article class="c-project">
+              <div class="c-project__top">
+                <span class="c-project__index">02</span>
+                <span class="c-project__type">WERKGEVER</span>
+              </div>
+              <h3 class="c-project__title">Bright Digital</h3>
+              <p class="c-project__desc">
+                Een project waar ik jarenlang intensief aan heb gewerkt. Binnen
+                een team van developers bouwde ik nieuwe modules op basis van
+                ontwerpen en functionele wensen. Naarmate het project groeide,
+                nam ik een steeds groter deel van de frontend ontwikkeling en
+                het onderhoud van de website voor mijn rekening.
+              </p>
+              <ul class="c-project__tags">
+                <li class="c-project__tag">HTML</li>
+                <li class="c-project__tag">SCSS</li>
+                <li class="c-project__tag">JavaScript</li>
+                <lwi class="c-project__tag">React</lwi>
+                <li class="c-project__tag">HubSpot CMS</li>
+              </ul>
+              <div class="c-project__actions">
+                <a
+                  class="c-btn c-btn--text"
+                  href="https://www.brightdigital.com/nl/"
+                  >Bekijk project
+                  <span class="c-btn__arrow" aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+
+            <!-- Interactive component -->
+            <article class="c-project">
+              <div class="c-project__top">
+                <span class="c-project__index">03</span>
+                <span class="c-project__type">KLANTPROJECT</span>
+              </div>
+              <h3 class="c-project__title">Puzzel</h3>
+              <p class="c-project__desc">
+                Voor deze klant van Bright werkte ik aan de ontwikkeling en het
+                onderhoud van verschillende onderdelen van de website. Ik bouwde
+                nieuwe modules, werkte bestaande componenten bij en vertaalde
+                ontwerpen naar responsive interfaces binnen HubSpot CMS.
+              </p>
+              <ul class="c-project__tags">
+                <li class="c-project__tag">HTML</li>
+                <li class="c-project__tag">SCSS</li>
+                <li class="c-project__tag">JavaScript</li>
+                <lwi class="c-project__tag">React</lwi>
+                <li class="c-project__tag">HubSpot CMS</li>
+              </ul>
+              <div class="c-project__actions">
+                <a class="c-btn c-btn--text" href="https://www.puzzel.com/"
+                  >Bekijk project
+                  <span class="c-btn__arrow" aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== QUOTE =================== -->
+      <section class="c-quote" aria-label="Persoonlijke visie">
+        <div class="o-container c-quote__inner">
+          <span class="c-quote__mark">Mijn aanpak</span>
+          <blockquote class="c-quote__text">
+            Ik houd van duidelijke oplossingen. Daarom bouw ik software die
+            prettig werkt en eenvoudig te onderhouden is.
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- =================== ABOUT =================== -->
+      <section class="c-about o-section" id="over" aria-labelledby="over-title">
+        <div class="o-container c-about__inner">
+          <div class="c-about__head">
+            <span class="c-eyebrow">Over mij</span>
+            <h2 class="c-section-head__title" id="over-title">
+              Frontend developer, vader en levenslange leerling.
+            </h2>
+          </div>
+
+          <div class="c-about__body">
+            <div class="c-about__text">
+              <p>
+                Naast mijn werk als frontend developer ben ik graag bezig met
+                dingen die me uitdagen en nieuwsgierig maken. Ik breng veel tijd
+                door met mijn vrouw en dochter en geniet van wandelen in de
+                natuur, tuinieren, koken en lezen.
+              </p>
+              <p>
+                Wat mij aanspreekt in zowel software als hobby's is hetzelfde:
+                begrijpen hoe iets werkt, structuur aanbrengen en stap voor stap
+                verbeteren. Of het nu gaat om een interface, een recept of werk
+                in de moestuin.
+              </p>
+            </div>
+
+            <ul class="c-values">
+              <li class="c-value">
+                <span class="c-value__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="c-value__title">Frontend developer</h3>
+                  <p class="c-value__desc">
+                    Ruim 4 jaar ervaring met HTML, CSS/Sass, JavaScript en
+                    componentgedreven ontwikkeling.
+                  </p>
+                </div>
+              </li>
+              <li class="c-value">
+                <span class="c-value__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 10.5 12 4l8 6.5" />
+                    <path
+                      d="M6 9.5V19a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5"
+                    />
+                    <path d="M10 19v-5a2 2 0 0 1 4 0v5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="c-value__title">Vader & Hobbyist</h3>
+                  <p class="c-value__desc">
+                    Buiten mijn werk besteed ik graag tijd aan mijn vrouw en
+                    dochter. Daarnaast houd ik van tuinieren, koken, natuur,
+                    geschiedenis en lezen.
+                  </p>
+                </div>
+              </li>
+              <li class="c-value">
+                <span class="c-value__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"
+                    />
+                    <circle cx="12" cy="12" r="2.5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="c-value__title">Oog voor detail</h3>
+                  <p class="c-value__desc">
+                    Van gebruikerservaring tot codekwaliteit: ik besteed graag
+                    aandacht aan de details die het verschil maken.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== PROCESS =================== -->
+      <section
+        class="c-process o-section"
+        id="werkwijze"
+        aria-labelledby="werkwijze-title"
+      >
+        <div class="o-container">
+          <div class="c-section-head">
+            <span class="c-eyebrow">Werkwijze</span>
+            <h2 class="c-section-head__title" id="werkwijze-title">
+              Hoe ik te werk ga
+            </h2>
+            <p class="c-section-head__intro">
+              Een eenvoudige aanpak die helpt om overzicht en kwaliteit te
+              behouden.
+            </p>
+          </div>
+
+          <ol class="c-process__steps">
+            <li class="c-step">
+              <span class="c-step__num">01</span>
+              <h3 class="c-step__title">Begrijpen</h3>
+              <p class="c-step__desc">Eerst helder krijgen wat er nodig is.</p>
+            </li>
+            <li class="c-step">
+              <span class="c-step__num">02</span>
+              <h3 class="c-step__title">Structureren</h3>
+              <p class="c-step__desc">Daarna de juiste structuur bepalen.</p>
+            </li>
+            <li class="c-step">
+              <span class="c-step__num">03</span>
+              <h3 class="c-step__title">Bouwen</h3>
+              <p class="c-step__desc">
+                De oplossing uitwerken in duidelijke en onderhoudbare code.
+              </p>
+            </li>
+            <li class="c-step">
+              <span class="c-step__num">04</span>
+              <h3 class="c-step__title">Verbeteren</h3>
+              <p class="c-step__desc">Testen, verfijnen en afwerken.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- =================== CONTACT =================== -->
+      <section
+        class="c-contact o-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="o-container">
+          <div class="c-contact__panel">
+            <h2 class="c-contact__title" id="contact-title">
+              Op zoek naar een frontend developer?
+            </h2>
+            <p class="c-contact__text">
+              Heb je een vraag, een project of ben je op zoek naar een nieuwe
+              collega? Stuur gerust een bericht. Ik maak graag kennis.
+            </p>
+            <div class="c-contact__actions">
+              <a
+                class="c-btn c-btn--primary"
+                href="mailto:bobvanveen@kpnmail.nl"
+                >Stuur een bericht</a
+              >
+              <a
+                class="c-btn c-btn--secondary"
+                href="https://www.linkedin.com/in/bobvveen/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                class="c-btn c-btn--secondary"
+                href="https://github.com/bobvanveendev"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+            <div class="c-contact__meta">
+              <button
+                class="c-contact__email"
+                type="button"
+                data-email="bobvanveen@kpnmail.nl"
+                aria-label="Kopieer e-mailadres bobvanveen@kpnmail.nl"
+              >
+                <span aria-hidden="true">✦</span>
+                <span>bobvanveen@kpnmail.nl</span>
+                <span class="c-contact__email-feedback">Gekopieerd ✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="c-footer">
+      <div class="o-container c-footer__inner">
+        <p class="c-footer__copy">© 2026 Bob van Veen — Frontend Developer.</p>
+        <nav class="c-footer__links" aria-label="Sociale links">
+          <a
+            href="https://www.linkedin.com/in/bobvveen/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/bobvanveendev"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a href="mailto:bobvanveen@kpnmail.nl">E-mail</a>
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

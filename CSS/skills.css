@@ -1,0 +1,78 @@
+.c-skills {
+  padding-block: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.c-skills__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+@media (min-width: 56em) {
+  .c-skills__inner {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-2xl);
+  }
+}
+
+.c-skills__label {
+  flex: 0 0 auto;
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-semi);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.c-skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.c-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.95rem;
+  font-size: var(--fs-meta);
+  font-weight: var(--fw-medium);
+  color: var(--color-ink);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  transition:
+    border-color var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
+}
+.c-skill:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.c-skill__icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  transition: color var(--dur) var(--ease);
+}
+.c-skill:hover .c-skill__icon {
+  color: var(--color-accent-strong);
+}
+
+/* Devicon font icons (official tech logos) in accent color */
+.c-skill > i {
+  font-size: 1.0625rem;
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  transition: color var(--dur) var(--ease);
+  line-height: 1;
+}
+.c-skill:hover > i {
+  color: var(--color-accent-strong);
+}

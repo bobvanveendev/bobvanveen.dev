@@ -1,0 +1,31 @@
+.t-theme .c-hero__media::before {
+  inset: -20% -24% -18% -26%;
+  height: auto;
+  background: radial-gradient(
+    ellipse 80% 86% at 54% 50%,
+    color-mix(in srgb, var(--color-accent) 32%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent) 18%, transparent) 45%,
+    transparent 100%
+  );
+  border-radius: 46% 54% 52% 48% / 56% 48% 52% 44%;
+  filter: blur(14px);
+}
+
+.t-theme .c-contact {
+  border-top: 1px solid var(--color-line);
+}
+
+.t-theme .c-project {
+  border-radius: var(--radius-lg);
+}
+
+.t-theme .c-quote__inner {
+  position: relative;
+}
+.t-theme .c-quote__text {
+  font-weight: var(--fw-medium);
+}
+
+.t-theme .c-skill {
+  background: var(--color-surface);
+}

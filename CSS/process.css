@@ -1,0 +1,50 @@
+.c-process {
+  background: var(--color-surface-deep);
+}
+
+.c-process__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.25rem, 0.5rem + 2vw, 2rem);
+}
+
+.c-step {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-top: var(--space-lg);
+  border-top: 2px solid var(--color-line-strong);
+  transition: border-color var(--dur) var(--ease);
+}
+.c-step:hover {
+  border-top-color: var(--color-accent);
+}
+
+.c-step__num {
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  font-weight: var(--fw-medium);
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+}
+.c-step__title {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semi);
+}
+.c-step__desc {
+  color: var(--color-ink-soft);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 40em) {
+  .c-step {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+@media (min-width: 64em) {
+  .c-step {
+    flex: 1 1 calc(25% - 1.5rem);
+  }
+}
