@@ -1,0 +1,144 @@
+/* =================================================================
+   contact.css — contact CTA panel + footer
+   ================================================================= */
+.c-contact {
+  padding-block: var(--space-section);
+}
+.c-contact__panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+  padding: clamp(2.5rem, 1.5rem + 5vw, 5rem) var(--gutter);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  border-radius: var(--radius-lg);
+}
+/* subtle light circle on the accent panel */
+.c-contact__panel::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #ffffff 9%, transparent);
+  pointer-events: none;
+}
+
+.c-contact__title {
+  position: relative;
+  max-width: 18ch;
+  color: var(--color-on-accent);
+  font-size: var(--fs-h2);
+  letter-spacing: -0.02em;
+}
+.c-contact__text {
+  position: relative;
+  max-width: 44ch;
+  color: color-mix(in srgb, var(--color-on-accent) 82%, transparent);
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+}
+
+.c-contact__actions {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+/* inverted button styles on accent background */
+.c-contact .c-btn--primary {
+  background: var(--color-on-accent);
+  color: var(--color-accent-strong);
+}
+.c-contact .c-btn--primary:hover {
+  background: #ffffff;
+}
+.c-contact .c-btn.c-btn--secondary {
+  background: transparent;
+  color: var(--color-on-accent);
+  border-style: solid;
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--color-on-accent) 45%, transparent);
+}
+.c-contact .c-btn.c-btn--secondary:hover {
+  border: 1px solid var(--color-on-accent);
+  color: var(--color-on-accent);
+  background: color-mix(in srgb, #ffffff 18%, transparent);
+}
+
+.c-contact__meta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+  font-size: var(--fs-meta);
+  color: color-mix(in srgb, var(--color-on-accent) 70%, transparent);
+}
+.c-contact__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  color: var(--color-on-accent);
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px dashed color-mix(in srgb, var(--color-on-accent) 45%, transparent);
+  padding-bottom: 2px;
+  transition: border-color var(--dur) var(--ease);
+}
+.c-contact__email:hover { border-bottom-color: var(--color-on-accent); }
+.c-contact__email-feedback {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+}
+.c-contact__email.is-copied .c-contact__email-feedback { opacity: 1; }
+
+/* ---- Footer ---- */
+.c-footer {
+  border-top: 1px solid var(--color-line);
+  padding-block: var(--space-xl);
+}
+.c-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+  text-align: center;
+}
+.c-footer__copy {
+  font-size: var(--fs-meta);
+  color: var(--color-muted);
+}
+.c-footer__links {
+  display: flex;
+  gap: var(--space-lg);
+}
+.c-footer__links a {
+  font-size: var(--fs-meta);
+  color: var(--color-ink-soft);
+  transition: color var(--dur) var(--ease);
+}
+.c-footer__links a:hover { color: var(--color-accent); }
+
+@media (min-width: 40em) {
+  .c-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
