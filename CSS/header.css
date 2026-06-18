@@ -169,7 +169,6 @@
   .c-nav__link {
     padding: 0.9rem 0.25rem;
     font-size: 1.0625rem;
-    border-bottom: 1px solid var(--color-line);
   }
   .c-nav__link::after {
     display: none;
