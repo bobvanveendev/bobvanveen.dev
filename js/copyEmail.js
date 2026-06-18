@@ -16,7 +16,7 @@ export function initCopyEmail() {
         .then(showFeedback)
         .catch(showFeedback);
     } else {
-      showFeedback(); // clipboard API unavailable — still acknowledge the click
+      showFeedback();
     }
   });
 }
